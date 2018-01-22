@@ -58,9 +58,14 @@ signs data set:
 #### 2. Include an exploratory visualization of the dataset.
 
 Here is an exploratory visualization of the data set. It is a bar chart showing the distribution of different classes across train/dev/test data.
+
 ![alt text][image1]
+
 ![alt text][image2]
+
 ![alt text][image3]
+
+
 From above charts we can see the distribution of different classes is not a normal distribution, some traffic signs occur more frequently over others. We may also find that the distribution between train and test data are actually quite similar, while dev data distribution seems a little bit different. I think the reason may be number of images in dev data is not large, which may introduce higher variance on dev data.
 
 
@@ -99,6 +104,7 @@ My final model consisted of the following layers:
 | Softmax				|        									|
 
 Tensorboard view of model graph is shown below.
+
 ![alt text][image4]
 
 #### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
@@ -119,7 +125,9 @@ My final model results were:
 * test set accuracy of 0.949
 
 Training loss and accuracy on dev data during training epochs can be seen below.
+
 ![alt text][image5]
+
 ![alt text][image6]
 
 If an iterative approach was chosen:
@@ -148,12 +156,24 @@ I did not try with a well known architecture but I think VGG or GoogleNet or Res
 
 Here are five German traffic signs that I found on the web:
 
-![alt text][image7] ![alt text][image8] ![alt text][image9]
-![alt text][image10] ![alt text][image11] ![alt text][image12]
+![alt text][image7]
+
+![alt text][image8] 
+
+![alt text][image9]
+
+![alt text][image10] 
+
+![alt text][image11] 
+
+![alt text][image12]
 
 The first 2 images might be difficult to classify because the size is rectangular, by resizing to 32*32, the traffic sign might be distorted.
+
 The third image might be difficult because resizing may cause distortion, and there is a background mark in the middle of the traffic sign.
+
 The forth and sixth image might be extremely difficult because in addition to reasons like third image, they are also blurred.
+
 The fifth image should be easy to classify.
 
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
